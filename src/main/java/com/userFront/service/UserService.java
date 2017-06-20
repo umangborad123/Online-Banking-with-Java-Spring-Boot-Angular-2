@@ -1,6 +1,9 @@
 package com.userFront.service;
 
+import java.util.Set;
+
 import com.userFront.domain.User;
+import com.userFront.domain.security.UserRole;
 
 public interface UserService {
 	
@@ -12,5 +15,6 @@ public interface UserService {
 	boolean checkEmailExists(String email);
 	
 	void save(User user);
+	User createUser(User user, Set<UserRole> userRoles);
 	
 }
