@@ -1,6 +1,7 @@
 package com.userFront.controller;
 
 
+import java.security.Principal;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.userFront.dao.RoleDao;
+import com.userFront.domain.PrimaryAccount;
+import com.userFront.domain.SavingsAccount;
 import com.userFront.domain.User;
 import com.userFront.domain.security.UserRole;
 import com.userFront.service.UserService;
@@ -67,5 +70,19 @@ public class HomeController {
 			return "redirect:/";
 			
 		}
-	}	
+	}
+	
+	@RequestMapping("/userFront")
+	public String userFront(Principal principal, Model model) {
+		
+		User user = userService.findByUsername(principal.getName());
+		PrimaryAccount primaryAccount = user.getPrimaryAccount();
+		SavingsAccount savingsAccount = user.getSavingsAccount();
+		
+		model.addAttribute("primaryAccount", primaryAccount);
+		model.addAttribute("savingsAccount", savingsAccount);
+		
+		return "userFront";
+	}
+	
 }
