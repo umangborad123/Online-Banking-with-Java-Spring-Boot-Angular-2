@@ -15,7 +15,7 @@ User-Front is a user-facing system and it includes modules such as User Signup/L
 
 It is mainly used by Admin and it involves User Account and Appointment modules. Admin can enable/disable Users, view statements of every Users, confirm an appointment.
 
-## Technologies Used in this course
+## Technologies Used
 
 **Front-end:** Html5/CSS3, JavaScript, JQuery, Bootstrap, Angular 2 and some JS plugins, JSON, Thymeleaf
 
