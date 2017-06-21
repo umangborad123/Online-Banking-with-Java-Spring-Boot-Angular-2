@@ -17,8 +17,6 @@ It is mainly used by Admin and it involves User Account and Appointment modules.
 
 ## Technologies Used in this course
 
-A wide range of technologies are involved in this course and project development.
-
 **Front-end:** Html5/CSS3, JavaScript, JQuery, Bootstrap, Angular 2 and some JS plugins, JSON, Thymeleaf
 
 **Back-end:** Java 8, Spring Boot, Spring Data, Spring Security, Hibernate, MySQL, Maven, Log4j
