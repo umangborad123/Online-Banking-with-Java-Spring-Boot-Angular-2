@@ -1,1 +1,194 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,200');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+  
+html {
+  background: #ffffff;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.clean-font {
+  color: #8f8f8f; 
+  font-weight: 200;
+}
+
+.navbar.navbar-clean {
+  background: #fff;
+  border-radius: 0;
+  border-bottom: 1px solid #bfbfbf;
+  color: #8f8f8f;
+}
+
+.navbar.navbar-clean .navbar-brand {
+  font-weight: 200;
+}
+
+.navbar.navbar-clean a {
+  color: #8f8f8f;
+}
+
+.navbar.navbar-clean ul > li > a:hover,
+.navbar.navbar-clean li.open a {
+  background: #fafafa;
+}
+
+.navbar.navbar-clean a i {
+  position: relative;
+  top: 1px;
+  margin-left: 6px;
+}
+
+Required for Dropdowns
+.dropdown {
+  position: relative;
+}
+.dropdown-toggle:focus {
+  outline: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 200px;
+  padding: 5px 0;
+  margin: 15px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fafafa;
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+  box-shadow: none;
+}
+.dropdown-menu:before {
+  content: "\00a0";
+  display: block;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: -6px;
+  border: 1px solid #8f8f8f;
+  border-right: 0;
+  border-bottom: 0;
+  background-color: #fafafa;
+  left: 10px;
+  -webkit-transform: rotate(48deg) skew(5deg);
+  transform: rotate(48deg) skew(5deg);
+}
+
+li .dropdown-menu:before {
+  height: 0;
+  width: 0;
+}
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #bfbfbf;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 2;
+  color: #8f8f8f;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #808080;
+  background-color: #f3f3f3;
+}
+.open > .dropdown-menu {
+  display: block;
+}
+.open > a {
+  outline: 0;
+}
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+.dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777777;
+  white-space: nowrap;
+}
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990;
+}
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: "";
+}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+  }
+
+@media (min-width: 768px) {
+  .navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+  .navbar-right .dropdown-menu-left {
+    left: 0;
+    right: auto;
+  }
+}
+.button-group,
+.button-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.button-group > .button,
+.button-group-vertical > .button {
+  position: relative;
+  float: left;
+}

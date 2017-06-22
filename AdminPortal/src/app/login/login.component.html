@@ -1,0 +1,21 @@
+  <div class="wrapper">
+    <form class="form-signin" (ngSubmit)="onSubmit()" [hidden]="loggedIn">       
+      <h2 class="clean-font">Please login</h2>
+
+      <input type="text" class="form-control" name="username" [(ngModel)]="username" placeholder="Username" name="username" required autofocus="" />
+      <br />
+
+      <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password" required /> 
+      <div class="form-group">     
+      <br/>
+      <label >
+         <input type="checkbox" name="remember-me" id="remember-me" />&nbsp;<span class="clean-font">Remember me</span>
+      </label>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Login</button>   
+    </form>
+    <div [hidden]="!loggedIn">
+      <h2>Welcome to Admin Portal!</h2>
+    </div>
+  </div>
+
