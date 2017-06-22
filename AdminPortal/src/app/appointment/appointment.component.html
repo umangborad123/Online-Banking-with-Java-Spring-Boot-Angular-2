@@ -1,0 +1,25 @@
+<h1>Appointment List Page</h1>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Appointment Id</th>
+			<th>User Name</th>
+			<th>Date</th>
+			<th>Description</th>
+			<th>Confirmed?</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let appointment of appointmentList">
+			<td>{{appointment.id}}</td>
+			<td>{{appointment.user.username}}</td>
+			<td>{{appointment.date | date: 'MM/dd/yyyy - hh:mm'}}</td>
+			<td>{{appointment.description}}</td>
+			<td>{{appointment.confirmed}}</td>
+			<td [hidden]="appointment.confirmed"><a (click)="confirmAppointment(appointment.id)" style="cursor: pointer;">Confirm</a></td>
+			<!-- <td [hidden]="!user.enabled"><a (click)="disableUser(user.username)" style="cursor: pointer;">Disable</a></td> -->
+		</tr>
+	</tbody>
+</table>   
