@@ -1,5 +1,6 @@
 package com.userFront.service.UserServiceImpl;
 
+import java.util.List;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -111,6 +112,10 @@ public class UserServiceImpl implements UserService {
 		userDao.save(user);
 		System.out.println(username + " is disabled.");
 	}
+
+	public List<User> findUserList() {
+        return userDao.findAll();
+    }
 	
 	
 }

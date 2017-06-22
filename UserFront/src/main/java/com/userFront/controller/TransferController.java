@@ -52,7 +52,7 @@ public class TransferController {
 
         return "redirect:/userFront";
     }
-   
+    
     @RequestMapping(value = "/recipient", method = RequestMethod.GET)
     public String recipient(Model model, Principal principal) {
         List<Recipient> recipientList = transactionService.findRecipientList(principal);
@@ -102,7 +102,7 @@ public class TransferController {
 
         return "recipient";
     }
-    
+
     @RequestMapping(value = "/toSomeoneElse",method = RequestMethod.GET)
     public String toSomeoneElse(Model model, Principal principal) {
         List<Recipient> recipientList = transactionService.findRecipientList(principal);
@@ -121,5 +121,4 @@ public class TransferController {
 
         return "redirect:/userFront";
     }
-   
 }
