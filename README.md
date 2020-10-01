@@ -1,6 +1,6 @@
 # Online Banking with Java, Spring Boot, Angular 2
 
-Developed an Banking website which lets you deposit or withdraw money, schedule an appointment with a banker, view bank statements, transfer money between primary or savings account or with other customer.
+Developed an Banking website which lets you deposit or withdraw money, make an appointment with a banker, view bank statements, transfer money between primary or savings account or with other customer.
 
 Created two separate server:
 
@@ -9,11 +9,11 @@ Created two separate server:
 
 ## User Frontend 
 
-User-Front is a user-facing system and it includes modules such as User Signup/Login, Account, Transfer, Appointment, Transaction and User Profile.
+User-Front is a user-facing system9front facing page) and it includes modules such as User Signup/Login, Account, Transfer, Appointment, Transaction and User Profile.
 
 ## Admin Portal
 
-It is mainly used by Admin and it involves User Account and Appointment modules. Admin can enable/disable Users, view statements of every Users, confirm an appointment.
+It is principally used by Admin and it involves User Account and Appointment modules. Admin can enable/disable Users, view statements of every Users, confirm an appointment with the user.
 
 ## Technologies Used
 
