@@ -9,7 +9,7 @@ Created two separate server:
 
 ## User Frontend 
 
-User-Front is a user-facing system9front facing page) and it includes modules such as User Signup/Login, Account, Transfer, Appointment, Transaction and User Profile.
+User-Front is a user-facing system (front facing page) and it includes modules such as User Signup/Login, Account, Transfer, Appointment, Transaction and User Profile.
 
 ## Admin Portal
 
